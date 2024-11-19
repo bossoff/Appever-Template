@@ -11,6 +11,7 @@ export default function AboutTwo() {
                     <img src={about} alt=""/>
                 </div>
             </div>
+            
 
             <div className="lg:col-span-7 md:col-span-6 md:order-1 order-2">
                 <div className="lg:me-10">
