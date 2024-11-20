@@ -14,3 +14,8 @@
     - "npm install"
     - "npm run build"
     shell: "BASH"
+  - action: "Send email"
+    type: "EMAIL"
+    title: "$BUDDY_PIPELINE_NAME execution #$BUDDY_RUN_ID"
+    content: "Hi. Your Action PIPLINE Run Successfully"
+    recipients: "rajiatlive@gmail.com"
