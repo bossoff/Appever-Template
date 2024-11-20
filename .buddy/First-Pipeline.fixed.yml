@@ -14,7 +14,3 @@
     - "npm install"
     - "npm run build"
     shell: "BASH"
-  - action: "Clear cache"
-    type: "CLEAR_CACHE"
-    cache_types:
-    - "FILE_SYSTEM"
