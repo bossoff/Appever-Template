@@ -5,6 +5,12 @@
     - "refs/heads/main"
   fail_on_prepare_env_warning: true
   actions:
+  - action: "Send email"
+    type: "EMAIL"
+    title: "$BUDDY_PIPELINE_NAME execution #$BUDDY_RUN_ID"
+    content: "Your Pipeline Actin is run successfully"
+    send_as_html: true
+    recipients: "rajiatlive@gmail.com"
   - action: "npm run build"
     type: "BUILD"
     docker_image_name: "library/node"
